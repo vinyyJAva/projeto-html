@@ -1,54 +1,76 @@
-<!DOCTYPE html>
-<html lang="PT-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Aula 4</title>
-</head>
-<body>
-        <header>
-            <H2>Header</H2>
-        </header>
-     
-        <nav><!--"//nav>ul>li*4>a''//''" -->
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviço</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Main content</h1>
-            <p>Espaço reservado para um artigo no conteudo principal</p>
-            <section>
-                <h2>Section 1 </h2>
-                <h4>Espaço reservado para seção 1</h4>
-            </section>
-            <section>
-                <h2>Section 2</h2>
-                <h4>Espaço reservado para seção 2</h4>
-            </section>
-        </main>
-        <aside>
-            <h3>Topícos</h3>
-                <ul>
-                    <li><a href="#">Topíco 1</a></li>
-                    <li><a href="#">Topíco 2</a></li>
-                    <li><a href="#">Topíco 3</a></li>
-                </ul>
-            <h3>Links inportantes</h3>
-            <ul>
-                <li><a href="#">Google</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Linkdin</a></li>
-            </ul>
-        </aside>
-        <footer>
-            <h1>Footer</h1>
-            <h4>Esse e o footer</h4>
-        </footer>
-
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>Home</h1>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navlist-item"><a href="index.html">Home</a></li>
+        <li class="navlist-item"><a href="#">Sobre</a></li>
+        <li class="navlist-item"><a href="#">Serviços</a></li>
+        <li class="navlist-item"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <!-- Main -->
+    <main class="main">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="slide-1"
+            src="./imagem1.jpg"
+            alt="The Office serie image"
+          />
+          <img
+            id="slide-2"
+            src="./imagem2.jpg"
+            alt="Reacher serie image"
+          />
+          <img
+            id="slide-3"
+            src="./imagem3.jpg"
+            alt="Riverdale serie image"
+          />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </main>
+    <!-- Aside -->
+    <aside class="aside">
+      <h2>Tópicos:</h2>
+      <ul class="topic-list">
+        <a href="#"><li class="topic-item">Tópico 1</li></a>
+        <a href="#"><li class="topic-item">Tópico 2</li></a>
+        <a href="#"><li class="topic-item">Tópico 3</li></a>
+      </ul>
+      <h2>Links importantes:</h2>
+      <ul class="links-list">
+        <a href="https://google.com" target="_blank"
+          ><li class="link-item">Google</li></a
+        >
+        <a href="https://github.com" target="_blank"
+          ><li class="link-item">Github</li></a
+        >
+        <a href="https://linkedin.com" target="_blank"
+          ><li class="link-item">Linkedin</li></a
+        >
+      </ul>
+    </aside>
+    <!-- Footer -->
+    <footer class="footer">
+      <h2>Footer</h2>
+      <p>This is the footer of the page.</p>
+    </footer>
+  </body>
 </html>
